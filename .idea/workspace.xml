@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="417912ba-62be-4c85-b467-b6cc4d7eb33d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a1s8fezBGPnFoMi12LmjFvqaER" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/CartDetail" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\shopio\src\components\CartDetail" />
+      <recent name="C:\OSPanel\domains\shopio\src\css" />
+      <recent name="C:\OSPanel\domains\shopio\src\redux" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\shopio\src\components\ProductRating" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\ProductGrid" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\ProductDetail" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\ProductCard" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\ContentArea" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="417912ba-62be-4c85-b467-b6cc4d7eb33d" name="Default Changelist" comment="" />
+      <created>1585914277471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585914277471</updated>
+      <workItem from="1585914282211" duration="10607000" />
+      <workItem from="1585937491061" duration="2156000" />
+      <workItem from="1586100804930" duration="500000" />
+      <workItem from="1586112179064" duration="3197000" />
+      <workItem from="1586189043809" duration="5293000" />
+      <workItem from="1586198153879" duration="3298000" />
+      <workItem from="1586334949176" duration="1933000" />
+      <workItem from="1586346298600" duration="6036000" />
+      <workItem from="1586355030106" duration="7345000" />
+      <workItem from="1586369196176" duration="442000" />
+      <workItem from="1586423977874" duration="15000" />
+      <workItem from="1586448171888" duration="1959000" />
+      <workItem from="1586506541553" duration="4542000" />
+      <workItem from="1586542762158" duration="2040000" />
+      <workItem from="1586591500353" duration="8716000" />
+      <workItem from="1586614028009" duration="7793000" />
+      <workItem from="1586626043032" duration="6047000" />
+      <workItem from="1586688999756" duration="4667000" />
+      <workItem from="1586699917341" duration="3739000" />
+      <workItem from="1586714925953" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586423990888">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586423990888" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1586191731187">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586191731187" />
+    <state x="656" y="252" width="1130" height="536" key="find.popup" timestamp="1586633919137">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="1130" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586633919137" />
+  </component>
+</project>
