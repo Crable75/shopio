@@ -1,8 +1,9 @@
-import shortid from 'shortid';
+import shortid from 'shortid'
 
-const ADD_TO_CART = "ADD_TO_CART";
-const INCREASE_PRODUCT_CART_AMOUNT = "INCREASE_PRODUCT_CART_AMOUNT";
-const DECREASE_PRODUCT_CART_AMOUNT = "DECREASE_PRODUCT_CART_AMOUNT";
+const ADD_TO_CART = "ADD_TO_CART"
+const INCREASE_PRODUCT_CART_AMOUNT = "INCREASE_PRODUCT_CART_AMOUNT"
+const DECREASE_PRODUCT_CART_AMOUNT = "DECREASE_PRODUCT_CART_AMOUNT"
+const DELETE_ITEM_FROM_CART = "DELETE_ITEM_FROM_CART"
 
 let initialState = {
     items: [
@@ -31,7 +32,7 @@ let initialState = {
             productAmount: 1
         },
     ]
-};
+}
 
 const CartReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -40,7 +41,7 @@ const CartReducer = (state = initialState, action) => {
             let productPresentIndex = state.items.findIndex(item =>
                 item.productId === action.productId &&
                 item.productSize === action.productSize &&
-                item.productColor === action.productColor);
+                item.productColor === action.productColor)
             if (productPresentIndex !== -1) {
                 return {
                     ...state,
@@ -48,7 +49,7 @@ const CartReducer = (state = initialState, action) => {
                         if (id === productPresentIndex) {
                             return {...item, productAmount: item.productAmount + 1}
                         }
-                        return item;
+                        return item
                     })
                 }
             } else {
@@ -65,7 +66,7 @@ const CartReducer = (state = initialState, action) => {
                             productAmount: 1
                         }
                     ]
-                };
+                }
             }
         }
 
@@ -76,7 +77,7 @@ const CartReducer = (state = initialState, action) => {
                     if (item.id === action.productCartId) {
                         return {...item, productAmount: item.productAmount + 1}
                 }
-                    return item;
+                    return item
                 })
             }
         }
@@ -88,16 +89,24 @@ const CartReducer = (state = initialState, action) => {
                     if (item.id === action.productCartId && item.productAmount > 1) {
                         return {...item, productAmount: item.productAmount - 1}
                     }
-                    return item;
+                    return item
                 })
-            };
+            }
+        }
+
+        case DELETE_ITEM_FROM_CART: {
+            console.log(action.productCartId)
+            return {
+                ...state,
+
+            }
         }
 
         default:
-            return state;
+            return state
     }
 
-};
+}
 
 export const addProductToCartAC = (productId, productSize, productColor, productPrice) => ({
     type: ADD_TO_CART,
@@ -105,16 +114,21 @@ export const addProductToCartAC = (productId, productSize, productColor, product
     productSize,
     productColor,
     productPrice
-});
+})
 
 export const increaseProductCartAmountAC = (productCartId) => ({
     type: INCREASE_PRODUCT_CART_AMOUNT,
     productCartId
-});
+})
 
 export const decreaseProductCartAmountAC = (productCartId) => ({
     type: DECREASE_PRODUCT_CART_AMOUNT,
     productCartId
-});
+})
 
-export default CartReducer;
+export const deleteItemFromCartAC = (productCartId) => ({
+    type: DELETE_ITEM_FROM_CART,
+    productCartId
+})
+
+export default CartReducer

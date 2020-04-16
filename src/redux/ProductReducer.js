@@ -199,12 +199,10 @@ let initialState = {
             }
         },
     ]
-};
+}
 
 const ProductReducer = (state = initialState, action) => {
+    return state
+}
 
-    return state;
-
-};
-
-export default ProductReducer;
+export default ProductReducer

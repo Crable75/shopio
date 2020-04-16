@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./ProductRating.module.scss";
+import React from "react"
+import styles from "./ProductRating.module.scss"
 
 const ProductRating = (props) => {
-    const productRating = [];
+    const productRating = []
 
     for (let i = 1; i <= 5; i++) {
         if (i <= props.rating) {
@@ -18,6 +18,6 @@ const ProductRating = (props) => {
             ))}
         </div>
     )
-};
+}
 
-export default ProductRating;
+export default ProductRating

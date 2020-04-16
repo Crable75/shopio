@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import styles from "./ProductCard.module.scss"
-import ProductRating from "../ProductRating/ProductRating";
+import ProductRating from "../ProductRating/ProductRating"
 
 const ProductCard = (props) => {
 
@@ -19,7 +19,7 @@ const ProductCard = (props) => {
                     <span className={styles.currentProductPrice}>{(props.itemPrice * props.itemDiscount).toFixed(2)}</span>
                     <div>
                         <span className={styles.oldProductPrice}>{props.itemPrice}</span>
-                        <span className={styles.ProductDiscount}>{parseInt((1 - props.itemDiscount) * 100)}% off</span>
+                        <span className={styles.ProductDiscount}>{Math.round((1 - props.itemDiscount) * 100)}% off</span>
                     </div>
                     </>
                 )
@@ -27,6 +27,6 @@ const ProductCard = (props) => {
         </div>
         </>
     )
-};
+}
 
-export default ProductCard;
+export default ProductCard

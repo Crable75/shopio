@@ -1,7 +1,7 @@
-import React from "react";
-import ProductCard from "../ProductCard/ProductCard";
+import React from "react"
+import ProductCard from "../ProductCard/ProductCard"
 import styles from "./ProductGrid.module.scss"
-import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom"
 
 const ProductGrid = (props) => {
     let productCardList = props.state.product.items.map(item => {
@@ -16,12 +16,12 @@ const ProductGrid = (props) => {
                 />
             </NavLink>
         )
-    });
+    })
     return (
         <div className={styles.productGrid}>
             {productCardList}
         </div>
     )
-};
+}
 
-export default ProductGrid;
+export default ProductGrid
