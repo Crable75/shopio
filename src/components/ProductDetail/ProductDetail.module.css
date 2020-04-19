@@ -79,18 +79,18 @@
     margin-right: 16px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+}
 
-    &:hover {
-        box-shadow: 0 5px 10px rgba(64,191,255,0.24);
-    }
+.productSize:hover {
+    box-shadow: 0 5px 10px rgba(64,191,255,0.24);
+}
 
-    &:last-child {
-        margin-right: 0;
-    }
+.productSize:last-child {
+    margin-right: 0;
 }
 
 .productSizeSelected {
-    @extend .productSize;
+    composes: productSize;
     color: #FB7181;
     border: 1px solid #FB7181;
 }
@@ -111,10 +111,10 @@
     margin-right: 16px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+}
 
-    &:hover {
-        box-shadow: 0 5px 10px rgba(64,191,255,0.24);
-    }
+.productColor:hover {
+    box-shadow: 0 5px 10px rgba(64,191,255,0.24);
 }
 
 .yellowColor {
@@ -163,8 +163,8 @@
     margin-left: 16px;
     margin-right: 16px;
     box-sizing: border-box;
+}
 
-    &:hover {
-        box-shadow: 0 10px 30px rgba(64,191,255,0.25);
-    }
+.btnAddToCart:hover {
+    box-shadow: 0 10px 30px rgba(64,191,255,0.25);
 }

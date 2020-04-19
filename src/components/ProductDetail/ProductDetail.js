@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {NavLink, withRouter} from "react-router-dom"
-import styles from "./ProductDetail.module.scss"
+import styles from "./ProductDetail.module.css"
+//composes
 import ProductRating from "../ProductRating/ProductRating"
 
 const ProductDetail = ({items, match, addProductToCart}) => {
@@ -10,7 +11,7 @@ const ProductDetail = ({items, match, addProductToCart}) => {
     const currentProductId = match.params.productId
 
     let currentProduct = {}
-
+//usememo
     items.map(item => {
         if (item.id === currentProductId) {
             currentProduct = item

@@ -1,6 +1,5 @@
 import React from "react"
-import {NavLink} from "react-router-dom"
-import styles from "./CartDetail.module.scss"
+import styles from "./CartDetail.module.css"
 
 
 
@@ -31,7 +30,7 @@ const CartDetail = ({cartItems, productItems, increaseProductCartAmount, decreas
                 <div className={styles.txtWrp}>
                     <div className={styles.titleWrp}>
                         <div className={styles.productTitle}>{productItems.find(item => item.productId = item.id).name}</div>
-                        <img onClick={() => {deleteItem(item.id)}} src="assets/images/icon-delete.svg" alt=""/>
+                        <img className={styles.deleteItem} onClick={() => {deleteItem(item.id)}} src="assets/images/icon-delete.svg" alt=""/>
                     </div>
                     <div className={styles.priceWrp}>
                         <span className={styles.productPrice}>${item.price}</span>
@@ -56,7 +55,7 @@ const CartDetail = ({cartItems, productItems, increaseProductCartAmount, decreas
                 <div>{productList}</div>
                 <div className={styles.totalWrp}>
                     <div className={styles.totalItemWrp}>
-                        <span className={styles.totalItemTitle}>Items:</span>
+                        <span className={styles.totalItemTitle}>Items ({cartItems.length}):</span>
                         <span className={styles.totalItem}>${totalItemPrice.toFixed(2)}</span>
                     </div>
                     <div className={styles.totalItemWrp}>

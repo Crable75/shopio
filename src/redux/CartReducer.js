@@ -95,10 +95,10 @@ const CartReducer = (state = initialState, action) => {
         }
 
         case DELETE_ITEM_FROM_CART: {
-            console.log(action.productCartId)
+            const idx = state.items.findIndex((el) => el.id === action.productCartId)
             return {
                 ...state,
-
+                items: [...state.items.slice(0, idx), ...state.items.slice(idx + 1)]
             }
         }
 

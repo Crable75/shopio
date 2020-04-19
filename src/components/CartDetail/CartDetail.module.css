@@ -9,10 +9,10 @@
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 16px;
+}
 
-    &:last-child {
-        margin-bottom: 32px;
-    }
+.itemWrp:last-child {
+    margin-bottom: 32px;
 }
 
 .productImgWrp {
@@ -70,14 +70,14 @@
     line-height: 1;
     margin: 0;
     padding: 0;
+}
 
-    &:focus {
-        outline: none;
-    }
+.cartItemCounter:focus {
+    outline: none;
 }
 
 .cartItemCounterDec {
-    @extend .cartItemCounter;
+    composes: cartItemCounter;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     font-size: 19px;
@@ -85,7 +85,7 @@
 }
 
 .cartItemCounterInc {
-    @extend .cartItemCounter;
+    composes: cartItemCounter;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -129,7 +129,7 @@
 }
 
 .totalItemTitleBold {
-    @extend .totalItem;
+    composes: totalItem;
     font-weight: 700;
 }
 
@@ -139,4 +139,13 @@
     height: 1px;
     background-color: #EBF0FF;
     margin-bottom: 12px;
+}
+
+.deleteItem {
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.deleteItem:hover {
+    transform: scale(1.1)
 }

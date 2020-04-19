@@ -1,0 +1,61 @@
+.menuWrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.06);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: inherit;
+    box-sizing: border-box;
+}
+
+.bottomMenuBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #9098B1;
+
+}
+
+.bottomMenuBtn::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.homeBtn,
+.searchBtn,
+.cartBtn,
+.offerBtn,
+.accountBtn {
+    composes: bottomMenuBtn;
+}
+
+.homeBtn:before {
+    background-image: url(/assets/images/icon-home.svg);
+}
+
+.searchBtn:before {
+    background-image: url(/assets/images/icon-search.svg);
+}
+
+.cartBtn:before {
+    background-image: url(/assets/images/icon-cart.svg);
+}
+
+.offerBtn:before {
+    background-image: url(/assets/images/icon-offer.svg);
+}
+
+.accountBtn:before {
+    background-image: url(/assets/images/icon-account.svg);
+}

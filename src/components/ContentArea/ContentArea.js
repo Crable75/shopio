@@ -4,7 +4,7 @@ import {Route} from "react-router-dom"
 import ProductDetailContainer from "../ProductDetail/ProductDetailContainer"
 import CartDetailContainer from "../CartDetail/CartDetailContainer"
 import BottomMenu from "../BottomMenu/BottomMenu";
-import styles from"./ContentArea.module.scss"
+import styles from "./ContentArea.module.css"
 
 const ContentArea = (props) => {
     return (

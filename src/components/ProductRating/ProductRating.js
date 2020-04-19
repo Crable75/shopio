@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./ProductRating.module.scss"
+import styles from "./ProductRating.module.css"
 
 const ProductRating = (props) => {
     const productRating = []

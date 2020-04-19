@@ -1,6 +1,6 @@
 import React from "react"
 import ProductCard from "../ProductCard/ProductCard"
-import styles from "./ProductGrid.module.scss"
+import styles from "./ProductGrid.module.css"
 import {NavLink} from "react-router-dom"
 
 const ProductGrid = (props) => {
