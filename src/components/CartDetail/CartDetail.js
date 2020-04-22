@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./CartDetail.module.css"
+import {NavLink} from "react-router-dom";
 
 
 
@@ -24,12 +25,16 @@ const CartDetail = ({cartItems, productItems, increaseProductCartAmount, decreas
         totalItemPrice += item.price * item.productAmount
         return (
             <div key={item.id} className={styles.itemWrp}>
-                <div className={styles.productImgWrp}>
-                    <img className={styles.productImg} src={img.photos.small} alt=""/>
-                </div>
+                <NavLink to={"/product/" + item.productId} className={styles.productLink}>
+                    <div className={styles.productImgWrp}>
+                        <img className={styles.productImg} src={img.photos.small} alt=""/>
+                    </div>
+                </NavLink>
                 <div className={styles.txtWrp}>
                     <div className={styles.titleWrp}>
-                        <div className={styles.productTitle}>{productItems.find(item => item.productId = item.id).name}</div>
+                        <NavLink to={"/product/" + item.productId} className={styles.productLink}>
+                            <div className={styles.productTitle}>{productItems.find(item => item.productId = item.id).name}</div>
+                        </NavLink>
                         <img className={styles.deleteItem} onClick={() => {deleteItem(item.id)}} src="assets/images/icon-delete.svg" alt=""/>
                     </div>
                     <div className={styles.priceWrp}>

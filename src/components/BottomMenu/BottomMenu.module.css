@@ -12,6 +12,7 @@
     width: 100%;
     max-width: inherit;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 .bottomMenuBtn {
@@ -40,22 +41,50 @@
     composes: bottomMenuBtn;
 }
 
+.homeBtn.activeBtn,
+.searchBtn.activeBtn,
+.cartBtn.activeBtn,
+.offerBtn.activeBtn,
+.accountBtn.activeBtn {
+    color: #40BFFF;
+}
+
 .homeBtn:before {
     background-image: url(/assets/images/icon-home.svg);
+}
+
+.homeBtn.activeBtn:before {
+    background-image: url(/assets/images/icon-home-active.svg);
 }
 
 .searchBtn:before {
     background-image: url(/assets/images/icon-search.svg);
 }
 
+.searchBtn.activeBtn:before {
+    background-image: url(/assets/images/icon-search-active.svg);
+}
+
 .cartBtn:before {
     background-image: url(/assets/images/icon-cart.svg);
+}
+
+.cartBtn.activeBtn:before {
+    background-image: url(/assets/images/icon-cart-active.svg);
 }
 
 .offerBtn:before {
     background-image: url(/assets/images/icon-offer.svg);
 }
 
+.offerBtn.activeBtn:before {
+    background-image: url(/assets/images/icon-offer-active.svg);
+}
+
 .accountBtn:before {
     background-image: url(/assets/images/icon-account.svg);
+}
+
+.accountBtn.activeBtn:before {
+    background-image: url(/assets/images/icon-account-active.svg);
 }

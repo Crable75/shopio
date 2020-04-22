@@ -5,11 +5,11 @@ import {NavLink} from "react-router-dom";
 const BottomMenu = () => {
     return (
         <div className={styles.menuWrp}>
-            <NavLink to="/" className={styles.homeBtn}>Home</NavLink>
-            <NavLink to="/explore" className={styles.searchBtn}>Search</NavLink>
-            <NavLink to="/cart" className={styles.cartBtn}>Cart</NavLink>
-            <NavLink to="/offer" className={styles.offerBtn}>Offer</NavLink>
-            <NavLink to="/account" className={styles.accountBtn}>Account</NavLink>
+            <NavLink exact to="/" className={styles.homeBtn} activeClassName={styles.activeBtn}>Home</NavLink>
+            <NavLink exact to="/search" className={styles.searchBtn} activeClassName={styles.activeBtn}>Search</NavLink>
+            <NavLink to="/cart" className={styles.cartBtn} activeClassName={styles.activeBtn}>Cart</NavLink>
+            <NavLink to="/offer" className={styles.offerBtn} activeClassName={styles.activeBtn}>Offer</NavLink>
+            <NavLink to="/account" className={styles.accountBtn} activeClassName={styles.activeBtn}>Account</NavLink>
         </div>
     )
 }
