@@ -31,7 +31,7 @@ let initialState = {
             price: 474.53,
             productAmount: 1
         },
-    ]
+    ],
 }
 
 const CartReducer = (state = initialState, action) => {

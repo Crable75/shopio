@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./CartDetail.module.css"
 import {NavLink} from "react-router-dom";
+import MainButton from "../MainButton/MainButton";
 
 
 
@@ -35,7 +36,7 @@ const CartDetail = ({cartItems, productItems, increaseProductCartAmount, decreas
                         <NavLink to={"/product/" + item.productId} className={styles.productLink}>
                             <div className={styles.productTitle}>{productItems.find(item => item.productId = item.id).name}</div>
                         </NavLink>
-                        <img className={styles.deleteItem} onClick={() => {deleteItem(item.id)}} src="assets/images/icon-delete.svg" alt=""/>
+                        <img className={styles.deleteItem} onClick={() => {deleteItem(item.id)}} src="/assets/images/icon-delete.svg" alt=""/>
                     </div>
                     <div className={styles.priceWrp}>
                         <span className={styles.productPrice}>${item.price}</span>
@@ -78,6 +79,10 @@ const CartDetail = ({cartItems, productItems, increaseProductCartAmount, decreas
                     </div>
                 </div>
             </div>
+            <NavLink to="/cart/ship" className={styles.btnLink}>
+                <MainButton buttonText="Check Out" />
+            </NavLink>
+
         </>
     )
 }

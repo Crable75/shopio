@@ -1,0 +1,31 @@
+.mainButton {
+    border: none;
+    color: #fff;
+    background-color: #40BFFF;
+    line-height: 57px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    box-sizing: border-box;
+
+    &:hover {
+        box-shadow: 0 10px 30px rgba(64,191,255,0.25);
+
+        &:disabled {
+            box-shadow: none;
+        }
+    }
+
+    &:disabled {
+        background-color: lightgrey;
+        cursor: auto;
+    }
+}

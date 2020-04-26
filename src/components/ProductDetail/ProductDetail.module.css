@@ -160,11 +160,18 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
-    margin-left: 16px;
-    margin-right: 16px;
     box-sizing: border-box;
 }
 
 .btnAddToCart:hover {
     box-shadow: 0 10px 30px rgba(64,191,255,0.25);
+}
+
+.btnAddToCart:disabled {
+    background-color: lightgrey;
+    cursor: auto;
+}
+
+.btnAddToCart:hover:disabled {
+    box-shadow: none;
 }

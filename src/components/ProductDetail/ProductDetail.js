@@ -1,17 +1,22 @@
-import React, {useState} from "react"
-import {NavLink, withRouter} from "react-router-dom"
+import React, {useMemo, useState} from "react"
+import { withRouter } from "react-router-dom"
 import styles from "./ProductDetail.module.css"
-//composes
 import ProductRating from "../ProductRating/ProductRating"
+import MainButton from "../MainButton/MainButton";
 
 const ProductDetail = ({items, match, addProductToCart}) => {
     const [selectedSize, setSelectedSize] = useState(0)
     const [selectedColor, setSelectedColor] = useState("")
+    const [disableBtn, setDisableBtn] = useState(true)
+    const memoizedValue = useMemo(() => {
+        selectedSize && selectedColor ? setDisableBtn(false) : setDisableBtn(true)
+    }, [selectedSize, selectedColor]
+    );
 
     const currentProductId = match.params.productId
 
     let currentProduct = {}
-//usememo
+
     items.map(item => {
         if (item.id === currentProductId) {
             currentProduct = item
@@ -42,7 +47,7 @@ const ProductDetail = ({items, match, addProductToCart}) => {
                 <span className={styles.productTitle}>{currentProduct.name}</span>
                 <ProductRating rating={currentProduct.rating}/>
                 <div className={styles.currentProductPriceWrp}>
-                    {currentProduct.discount === 1
+                    { currentProduct.discount === 1
                         ? <span className={styles.currentProductPrice}>{currentProduct.price}</span>
                         : <>
                             <span className={styles.currentProductPrice}>{productPrice}</span>
@@ -95,9 +100,9 @@ const ProductDetail = ({items, match, addProductToCart}) => {
     return (
         <>
             {currentProductInfo}
-            <button onClick={() => onAddToCart(currentProductId, selectedSize, selectedColor, productPrice)}
-                    className={styles.btnAddToCart}>Add To Cart
-            </button>
+            <MainButton onClickFunction={ () => onAddToCart(currentProductId, selectedSize, selectedColor, productPrice) }
+                        disableButton={ disableBtn }
+                        buttonText={"Add To Cart"}/>
         </>
     )
 }
