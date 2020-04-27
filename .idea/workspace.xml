@@ -20,23 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="417912ba-62be-4c85-b467-b6cc4d7eb33d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/MainButton/MainButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainButton/MainButton.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Ship/Ship.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Ship/Ship.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Ship/ShipContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/UserReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditAddress/EditAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditAddress/EditAddress.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EditAddress/EditAddressContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartDetail/CartDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartDetail/CartDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartDetail/CartDetail.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartDetail/CartDetail.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContentArea/ContentArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentArea/ContentArea.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductDetail/ProductDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductDetail/ProductDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductDetail/ProductDetail.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductDetail/ProductDetail.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/CartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/CartReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ship/Ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ship/Ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ship/Ship.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ship/Ship.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ship/ShipContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Ship/ShipContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/UserReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/UserReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +62,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Ship" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/EditAddress" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,19 +73,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\shopio\src\components\Ship" />
-      <recent name="C:\OSPanel\domains\shopio\src\redux" />
-      <recent name="C:\OSPanel\domains\shopio\src\components\MainButton" />
-      <recent name="C:\OSPanel\domains\shopio\src\components\ContentArea" />
-      <recent name="C:\OSPanel\domains\shopio\src\components\BottomMenu" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\shopio\src\node_modules" />
       <recent name="C:\OSPanel\domains\shopio\src\components\ProductRating" />
       <recent name="C:\OSPanel\domains\shopio\src\components\ProductGrid" />
       <recent name="C:\OSPanel\domains\shopio\src\components\ProductDetail" />
       <recent name="C:\OSPanel\domains\shopio\src\components\ProductCard" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\shopio\src\components\EditAddress" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\Ship" />
+      <recent name="C:\OSPanel\domains\shopio\src\redux" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\MainButton" />
+      <recent name="C:\OSPanel\domains\shopio\src\components\ContentArea" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,6 +152,10 @@
       <workItem from="1587908124729" duration="5665000" />
       <workItem from="1587915860492" duration="1428000" />
       <workItem from="1587924650686" duration="2908000" />
+      <workItem from="1587934930059" duration="27000" />
+      <workItem from="1588003693205" duration="18000" />
+      <workItem from="1588003875248" duration="738000" />
+      <workItem from="1588011462501" duration="4928000" />
     </task>
     <servers />
   </component>
@@ -187,22 +183,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586423990888" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1587580068131">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1588019360748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587580068131" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1587580068131">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588019360748" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1588019360748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587580068131" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1587580068131">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588019360748" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1588019360748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587580068131" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1587580068131">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588019360748" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1588019360748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587580068131" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588019360748" />
     <state x="2077" y="148" key="SettingsEditor" timestamp="1587926435815">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -219,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="571" y="361" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2.inPresentationMode/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587131666764" />
-    <state x="359" y="99" width="1226" height="842" key="find.popup" timestamp="1587925555919">
+    <state x="359" y="99" width="1226" height="842" key="find.popup" timestamp="1588018247267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="359" y="99" width="1226" height="842" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587925555919" />
+    <state x="359" y="99" width="1226" height="842" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588018247267" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587926392429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,6 +1,7 @@
 import React from "react"
 import {connect} from "react-redux"
 import Ship from "./Ship";
+import {selectAddressToShipAC} from "../../redux/UserReducer";
 
 
 const mapStateToProps = (state) => {
@@ -10,12 +11,15 @@ const mapStateToProps = (state) => {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//
-//     }
-// }
+const mapDispatchToProps = (dispatch) => {
+    return {
 
-const ShipContainer = connect(mapStateToProps, {})(Ship)
+        selectAddressToShip: (addressId) => {
+            dispatch(selectAddressToShipAC(addressId))
+        }
+    }
+}
+
+const ShipContainer = connect(mapStateToProps, mapDispatchToProps)(Ship)
 
 export default ShipContainer

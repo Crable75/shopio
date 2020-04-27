@@ -1,7 +1,7 @@
 .addressWrp {
     display: flex;
     flex-direction: column;
-    border: 1px solid #EBF0FF;
+    border: 2px solid #EBF0FF;
     border-radius: 5px;
     padding: 24px;
     margin-bottom: 16px;
@@ -34,31 +34,12 @@
     margin-bottom: 16px;
 }
 
-.deleteItem {
-    cursor: pointer;
-    transition: all ease-in-out 0.2s;
-    width: 20px;
-    height: 20px;
-
-    &:hover {
-        transform: scale(1.1)
-    }
-}
-
-.editWrp {
-    display: flex;
-    align-items: center;
-}
-
 .addressEdit {
     border: none;
     color: #fff;
     background-color: #40BFFF;
     line-height: 57px;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 100%;
     font-weight: 700;
     font-size: 14px;
@@ -68,9 +49,14 @@
     box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
-    margin-right: 24px;
 
     &:hover {
         box-shadow: 0 10px 30px rgba(64,191,255,0.25);
     }
+}
+
+.editLink {
+    text-decoration: none;
+    align-self: flex-start;
+
 }

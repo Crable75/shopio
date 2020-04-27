@@ -6,6 +6,7 @@ import CartDetailContainer from "../CartDetail/CartDetailContainer"
 import BottomMenu from "../BottomMenu/BottomMenu";
 import styles from "./ContentArea.module.css"
 import ShipContainer from "../Ship/ShipContainer";
+import EditAddressContainer from "../EditAddress/EditAddressContainer";
 
 const ContentArea = ({state}) => {
     return (
@@ -14,6 +15,7 @@ const ContentArea = ({state}) => {
             <Route exact path="/" render={() => <ProductGrid state={state} />} />
             <Route exact path="/cart/" render={() => <CartDetailContainer />} />
             <Route exact path="/cart/ship" render={() => <ShipContainer />} />
+            <Route path="/editaddress/:addressId" render={() => <EditAddressContainer />} />
             <BottomMenu/>
         </div>
     )
